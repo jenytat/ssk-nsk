@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(../fonts/Gilroy-Bold.eot);
+  src: local("☺"), url(../fonts/Gilroy-Bold.eot?#iefix) format("svembedded-opentypeg");
+  src: url(../fonts/Gilroy-Bold.ttf) format("truetype");
+  src: url(../fonts/Gilroy-Bold.woff) format("woff");
+  src: url(../fonts/Gilroy-Bold.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url(../fonts/Gilroy-Regular.eot);
+  src: local("☺"), url(../fonts/Gilroy-Regular.eot?#iefix) format("svembedded-opentypeg");
+  src: url(../fonts/Gilroy-Regular.ttf) format("truetype");
+  src: url(../fonts/Gilroy-Regular.woff) format("woff");
+  src: url(../fonts/Gilroy-Regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url(../fonts/Gilroy-Medium.eot);
+  src: local("☺"), url(../fonts/Gilroy-Medium.eot?#iefix) format("svembedded-opentypeg");
+  src: url(../fonts/Gilroy-Medium.ttf) format("truetype");
+  src: url(../fonts/Gilroy-Medium.woff) format("woff");
+  src: url(../fonts/Gilroy-Medium.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Archangelsk";
+  src: url(../fonts/Archangelsk.eot);
+  src: local("☺"), url(../fonts/Archangelsk.eot?#iefix) format("svembedded-opentypeg");
+  src: url(../fonts/Archangelsk.ttf) format("truetype");
+  src: url(../fonts/Archangelsk.woff) format("woff");
+  src: url(../fonts/Archangelsk.woff2) format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-header form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.container-header form::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../images/icon/serch.svg) no-repeat;
+  background-size: contain;
+  top: 11px;
+  left: 10px;
+}
+
+.container-header form input[type="text"] {
+  width: 84.2%;
+  height: 42px;
+  background: #FAFAFA;
+  border: 1px solid #FE8A00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  padding: 11px 20px 11px 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.container-header form input[placeholder] {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #A9A9A9;
+}
+
+.container-header form input[type="submit"] {
+  width: 15.8%;
+  height: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FE8A00;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+@media (max-width: 991px) {
+  .container-header form input[type="text"] {
+    width: 61.4%;
+  }
+  .container-header form input[type="submit"] {
+    width: 38.6%;
+  }
+}

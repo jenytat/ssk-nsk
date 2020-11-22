@@ -1,0 +1,80 @@
+// fonts
+$main-font: "Gilroy Regular", sans-serif
+$bold-font: "Gilroy Bold", sans-serif
+$semi-font: "Gilroy Medium", sans-serif
+$logo-font: "Archangelsk", sans-serif
+// colors
+$blue-color: #2D2C60
+$gray-color: #858585
+$phone-color: #3682C9
+$text-color: #2D2D2D
+$menu-color: #598FC1
+$hover-color: #1F4A71
+$red-color: #E42C24
+$btn-color: #53D6FF
+$about-color: #D3E4F3
+$info-color: #737373
+body
+    font-family: sans-serif
+.container-header
+    box-sizing: border-box
+    max-width: 1140px
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+    & form
+        width: 100%
+        display: flex
+        align-items: flex-start
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 19px
+            height: 19px
+            background: url(../images/icon/serch.svg) no-repeat
+            background-size: contain
+            top: 11px
+            left: 10px
+        & input[type="text"]
+            width: 84.2%
+            height: 42px
+            background: #FAFAFA
+            border: 1px solid #FE8A00
+            box-sizing: border-box
+            outline: none
+            padding: 11px 20px 11px 46px
+            display: flex
+            align-items: center
+            font-size: 14px
+            line-height: 19px
+            font-weight: 600
+        & input[placeholder]
+            font-size: 14px
+            line-height: 19px
+            font-weight: 600
+            color: #A9A9A9
+        & input[type="submit"]
+            width: 15.8%
+            height: 42px
+            box-sizing: border-box
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #FE8A00
+            border: none
+            cursor: pointer
+            color: #FFFFFF
+            font-weight: 600
+            text-transform: uppercase
+            font-size: 11px
+            line-height: 15px
+@media(max-width: 991px)
+    .container-header
+        & form input[type="text"]
+            width: 61.4%
+        & form input[type="submit"]
+            width: 38.6%
+
+
